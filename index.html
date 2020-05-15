@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quotey!</title>
+		<link rel="stylesheet" href="styleSheet.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div id="backdrop"></div>
+		<div id="selection" class="playerSelection hidden">
+			<h1>Continue as...</h1>
+			<button id="singleBtn" class="selectBtn" type="button">
+				Single Speaker
+			</button>
+			<button id="doubleBtn" class="selectBtn" type="button">
+				Two Speakers
+			</button>
+		</div>
+		<div class="gridContainer">
+			<div class="yodaSection">
+				<img id="yoda" src="./assests/images/yoda.png" alt="yoda cartoon" />
+				<button id="yodaBtn" type="button" class="btnYoda">Yoda am I!</button>
+			</div>
+			<div class="pilot">
+				<h1>Pick a voice...</h1>
+			</div>
+			<div class="patrickSection">
+				<img
+					id="patrick"
+					src="./assests/images/patrick.png"
+					alt="patrick cartoon"
+				/>
+				<button id="patrickBtn" type="button" class="btnPatrick">
+					Patrick?!
+				</button>
+			</div>
+		</div>
+
+		<footer>
+			<p>Built by Duygu Gözen</p>
+			<p>Voice overs by Hakan Mutlus</p>
+		</footer>
+	</body>
+</html>

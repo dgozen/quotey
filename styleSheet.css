@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+p {
+	margin: 0;
+	padding: 0;
+	font-family: 'Short Stack', cursive;
+	overflow: auto;
+}
+
+body {
+	position: relative;
+}
+
+img {
+	margin: 2vw;
+}
+
+h1 {
+	margin: 0;
+	padding: 2.5vw;
+	font-family: 'Short Stack', cursive;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0.25em;
+	text-align: center;
+	letter-spacing: 0.025em;
+	color: #ffffff;
+	border-radius: 20px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+	margin: 3vw;
+	font-family: 'Short Stack', cursive;
+	width: 40vw;
+	height: 15vw;
+	border: none;
+	border-radius: 19px;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+
+.gridContainer {
+	grid-template-rows: 1fr auto 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.yodaSection {
+	grid-row: 1 / span1;
+	background-color: #6caa83;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-items: center;
+	align-items: end;
+	align-content: space-around;
+}
+
+.patrickSection {
+	grid-row: 3 / span1;
+	background-color: #ff5f5c;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+	justify-items: center;
+	align-items: start;
+}
+
+.pilot {
+	grid-row: 2 / span1;
+	padding: 2px;
+	background: linear-gradient(180deg, #6caa83 50%, #ff5f5c 50%);
+}
+
+.btnYoda {
+	background-color: #ff5f5c;
+}
+
+.btnPatrick {
+	background-color: #6caa83;
+}
+
+footer {
+	font-size: small;
+	line-height: 1.25rem;
+	text-align: center;
+	color: #ffffff;
+	background: #343537;
+}
+
+#backdrop {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.75);
+	z-index: 10;
+	pointer-events: none;
+	display: none;
+}
+
+#backdrop.visible {
+	display: block;
+	pointer-events: all;
+}
+
+.playerSelection {
+	z-index: 10;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 250px;
+	margin-bottom: 0px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #6caa83;
+	color: #ffffff;
+	border-radius: 30px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.selectBtn {
+	margin: 2px 5px 8px 5px;
+	font-family: 'Short Stack', cursive;
+	width: 100px;
+	height: 60px;
+	border: none;
+	border-radius: 20px;
+	font-size: 15px;
+	line-height: 1.2rem;
+	text-align: center;
+	color: #343537;
+	background-color: #ff5f5c;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+	display: none;
+}
+
+@media screen and (max-width: 420px) {
+	#yoda {
+		width: 50vw;
+		grid-column: 1 / span 1;
+	}
+
+	#patrick {
+		width: 40vw;
+		grid-column: 2 / span 1;
+	}
+
+	.btnYoda {
+		grid-column: 2 / span 1;
+	}
+
+	.btnPatrick {
+		grid-column: 1 / span 1;
+		grid-row: 1 / span 1;
+	}
+}
+
+@media screen and (min-width: 420px) {
+	.yodaSection {
+		grid-template-columns: 50% 50%;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.patrickSection {
+		grid-template-columns: 40% 60%;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	#yoda {
+		width: 70vw;
+	}
+
+	#patrick {
+		width: 60vw;
+	}
+
+	button {
+		width: 38vw;
+		height: 13vw;
+		font-size: 22px;
+	}
+
+	.btnYoda {
+		grid-column: 2 / span 1;
+	}
+
+	.btnPatrick {
+		grid-column: 1 / span 1;
+		grid-row: 1 / span 1;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	body {
+		background: linear-gradient(90deg, #6caa83 50%, #ff5f5c 50%);
+	}
+	.gridContainer {
+		display: grid;
+		grid-template-rows: 17% 50% 15% 7%;
+		grid-template-columns: 50% 50%;
+		justify-items: center;
+		align-items: center;
+		align-content: space-around;
+		text-align: center;
+	}
+
+	.yodaSection {
+		grid-row: 2 / span 1;
+		grid-column: 1 / span 1;
+		display: inline-block;
+	}
+
+	.patrickSection {
+		grid-row: 2 / span 2;
+		grid-column: 2 / span 2;
+		display: block;
+		justify-self: end;
+		align-items: center;
+	}
+
+	.pilot {
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 2;
+		width: 100%;
+		background: #343537;
+	}
+
+	h1 {
+		font-size: 35px;
+		padding: 2vh;
+	}
+
+	button {
+		width: 20vw;
+		height: 12vh;
+		font-size: 26px;
+	}
+
+	.btnYoda {
+		grid-row: 3 / span 1;
+		grid-column: 1 / span 1;
+	}
+
+	.btnPatrick {
+		grid-row: 3 / span 1;
+		grid-column: 2 / span 1;
+	}
+
+	#yoda {
+		width: 36vw;
+	}
+
+	#patrick {
+		width: 26vw;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	body {
+		background: linear-gradient(90deg, #6caa83 50%, #ff5f5c 50%);
+	}
+	.gridContainer {
+		display: grid;
+		grid-template-rows: 60% 30% 10%;
+		grid-template-columns: 50% 50%;
+		justify-items: center;
+		align-items: center;
+		align-content: space-around;
+		text-align: center;
+	}
+
+	.yodaSection {
+		background: none;
+	}
+
+	.patrickSection {
+		background: none;
+	}
+
+	.pilot {
+		position: absolute;
+		top: 24vh;
+		width: 25vw;
+		background: #343537;
+		border-radius: 20px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	button {
+		width: 15vw;
+		height: 12vh;
+		font-size: 26px;
+	}
+
+	.btnYoda {
+		position: absolute;
+		top: 35vh;
+		left: 30%;
+	}
+
+	.btnPatrick {
+		position: absolute;
+		top: 35vh;
+		right: 30%;
+	}
+
+	#yoda {
+		margin-right: 15vw;
+	}
+
+	footer {
+		grid-row: 3 / span 1;
+		grid-column: 1 / span 2;
+	}
+}
