@@ -1,0 +1,15 @@
+- pick a character
+- confirm one / two players
+
+single player
+
+- selected character loads depending on state
+- quotes avaliable as buttons at the bottom
+- clicking it makes it written and pronounced on screen
+
+double player
+
+- selected player loads depending on state
+- player one starts note at the top
+- hears / sees the quote
+- has turn to click reply quote
