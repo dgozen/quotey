@@ -21,10 +21,11 @@ const setCharacter = (name) => {
 
 backdrop.addEventListener('click', toggleWindowHandler);
 yodaBtn.addEventListener('click', () => {
-	setCharacter('yoda'), toggleWindowHandler();
+	setCharacter('Yoda'), toggleWindowHandler();
 });
 patrickBtn.addEventListener('click', () => {
-	setCharacter('patrick'), toggleWindowHandler();
+	setCharacter('Patrick'), toggleWindowHandler();
 });
-singleBtn.onclick = () => (location.href = './SinglePlayer.html');
-doubleBtn.onclick = () => (location.href = './twoPlayer.html');
+singleBtn.onclick = () =>
+	(location.href = `./SinglePlayer${character.name}.html`);
+doubleBtn.onclick = () => (location.href = `./twoPlayer${character.name}.html`);
