@@ -5,10 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Quotey!</title>
 		<link rel="stylesheet" href="./assests/styles/yoda.css" />
-		<script src="./assests/scripts/scriptTwoPlayer.js" defer></script>
 	</head>
 	<body>
-		<div class="incoming"><p>spot for incoming</p></div>
+		<div id="printScreen"><p>spot for incoming</p></div>
 		<div class="container">
 			<img id="yoda" src="./assests/images/yoda.png" alt="yoda cartoon" />
 			<ul>
@@ -17,5 +16,7 @@
 				<li>3 Hello. My name is yoda!</li>
 			</ul>
 		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="./assests/scripts/scriptTwoPlayer.js"></script>
 	</body>
 </html>
