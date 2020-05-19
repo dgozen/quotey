@@ -1,9 +1,20 @@
 {
 	"name": "quotey",
-	"version": "0.0.1",
-	"description": "quote speaker",
+	"version": "1.0.0",
+	"description": "quote app",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server",
+		"dev": "nodemon server"
+	},
+	"author": "Duygu",
+	"license": "ISC",
 	"dependencies": {
 		"express": "^4.17.1",
+		"moment": "^2.25.3",
 		"socket.io": "^2.3.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.4"
 	}
 }
