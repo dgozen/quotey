@@ -6,6 +6,7 @@ body {
 	overflow: auto;
 	background: #ff5f5c;
 }
+
 .quoteText {
 	background: yellowgreen;
 	text-align: center;
@@ -26,6 +27,11 @@ h3 {
 	text-align: center;
 	justify-content: center;
 	align-items: start;
+}
+
+ul {
+	height: 70vh;
+	overflow: auto;
 }
 
 li {
@@ -49,6 +55,24 @@ li:hover {
 #patrick {
 	padding: 2vw;
 	width: 30vw;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #343537;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: gray;
 }
 
 @media screen and (max-width: 420px) {
