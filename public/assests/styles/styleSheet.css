@@ -10,7 +10,6 @@ p {
 	margin: 0;
 	padding: 0;
 	font-family: 'Short Stack', cursive;
-	overflow: auto;
 }
 
 body {
@@ -231,15 +230,21 @@ footer {
 	.yodaSection {
 		grid-row: 2 / span 1;
 		grid-column: 1 / span 1;
-		display: inline-block;
+		background: none;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
 	}
 
 	.patrickSection {
-		grid-row: 2 / span 2;
+		grid-row: 2 / span 1;
 		grid-column: 2 / span 2;
-		display: block;
-		justify-self: end;
-		align-items: center;
+		background: none;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
 	}
 
 	.pilot {
@@ -263,15 +268,18 @@ footer {
 	.btnYoda {
 		grid-row: 3 / span 1;
 		grid-column: 1 / span 1;
+		align-self: center;
 	}
 
 	.btnPatrick {
 		grid-row: 3 / span 1;
 		grid-column: 2 / span 1;
+		align-self: center;
 	}
 
 	#yoda {
 		width: 36vw;
+		z-index: 10;
 	}
 
 	#patrick {
@@ -304,6 +312,7 @@ footer {
 	.pilot {
 		position: absolute;
 		top: 24vh;
+		left: 38%;
 		width: 25vw;
 		background: #343537;
 		border-radius: 20px;
