@@ -1,3 +1,5 @@
+import sounds from '../sounds/yoda/yodaSounds';
+
 const socket = io();
 
 //This is the quote coming from the server
