@@ -82,7 +82,7 @@ li:hover {
 		padding: 0;
 	}
 	.container {
-		grid-template-columns: 40% 60%;
+		grid-template-columns: 60% 40%;
 	}
 	.quote {
 		font-size: 22px;
