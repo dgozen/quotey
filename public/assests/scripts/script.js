@@ -27,5 +27,5 @@ patrickBtn.addEventListener('click', () => {
 	setCharacter('Patrick'), toggleWindowHandler();
 });
 singleBtn.onclick = () =>
-	(location.href = `./SinglePlayer${character.name}.html`);
+	(location.href = `./singlePlayer${character.name}.html`);
 doubleBtn.onclick = () => (location.href = `./twoPlayer${character.name}.html`);
