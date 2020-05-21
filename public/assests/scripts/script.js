@@ -16,7 +16,6 @@ const toggleWindowHandler = () => {
 
 const setCharacter = (name) => {
 	character.name = name;
-	console.log(character.name);
 };
 
 backdrop.addEventListener('click', toggleWindowHandler);

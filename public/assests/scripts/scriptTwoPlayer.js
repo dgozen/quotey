@@ -1,4 +1,5 @@
-import sounds from '../sounds/yoda/yodaSounds';
+import sounds from '../sounds/yoda/yodaSounds.js';
+console.log(sounds);
 
 const socket = io();
 
@@ -24,4 +25,13 @@ quotes.forEach((item) =>
 function printToScreen(quote) {
 	const printScreen = document.getElementById('printScreen');
 	printScreen.innerHTML = quote;
+}
+const list = document.querySelector('ul');
+const length = list.children.length;
+for (let i = 0; i < length; i++) {
+	(function(index) {
+		list.children[i].onclick = function() {
+			sounds[i].play();
+		};
+	})(i);
 }

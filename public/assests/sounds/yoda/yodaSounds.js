@@ -1,4 +1,4 @@
-export let sounds = [
+let sounds = [
 	new Audio('./Annoying.mp3'),
 	new Audio('./Awkward.mp3'),
 	new Audio('./Control.mp3'),
@@ -15,5 +15,7 @@ export let sounds = [
 	new Audio('./Secret.mp3'),
 	new Audio('./Teacher.mp3'),
 	new Audio('./Truly.mp3'),
-	new Audio('./Yes.mp3'),
+	new Audio('./Yes.mp'),
 ];
+
+export default sounds;
