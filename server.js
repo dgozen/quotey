@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
 });
 
 //if there is a enviroment variable with a port
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 //run a server with port number
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
