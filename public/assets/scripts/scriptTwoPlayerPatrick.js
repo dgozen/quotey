@@ -1,6 +1,3 @@
-import sounds from '../sounds/yoda/yodaSounds.js';
-console.log(sounds);
-
 const socket = io();
 
 //This is the quote coming from the server
@@ -31,7 +28,7 @@ const length = list.children.length;
 for (let i = 0; i < length; i++) {
 	(function(index) {
 		list.children[i].onclick = function() {
-			sounds[i].play();
+			// sounds[i].play();
 		};
 	})(i);
 }

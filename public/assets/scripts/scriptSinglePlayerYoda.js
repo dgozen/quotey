@@ -1,15 +1,11 @@
-import sounds from '../sounds/yoda/yodaSounds';
-console.log(sounds);
-
-// var one = new Audio('/assests/sounds/yoda/Annoying.mp3');
+import audioArray from '../sounds/yoda/audioArray.js';
 
 const list = document.querySelector('ul');
 const length = list.children.length;
 for (let i = 0; i < length; i++) {
 	(function(index) {
 		list.children[i].onclick = function() {
-			console.log(sounds[i]);
-			// one.play();
+			audioArray[i].play();
 		};
 	})(i);
 }
