@@ -1,4 +1,4 @@
-// import audioArray from '../sounds/yoda/audioArray.js';
+// import audioArray from '../sounds/audioArray.js';
 
 const list = document.querySelector('ul');
 const length = list.children.length;

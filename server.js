@@ -14,7 +14,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 io.on('connection', (socket) => {
 	//All the emits have to be done here not outside...
 	//All the connections are written within this
-
 	console.log('new user online');
 	socket.emit('message', 'Are you ready to quote?');
 
@@ -28,9 +27,10 @@ io.on('connection', (socket) => {
 	});
 
 	//Listen for the clicked quote
-	socket.on('quote', (quote) => {
-		console.log(quote);
+	socket.on('quote', (quote, index) => {
 		io.emit('message', quote);
+		console.log(index);
+		io.emit('index', index);
 	});
 });
 
