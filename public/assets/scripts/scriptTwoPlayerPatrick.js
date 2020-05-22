@@ -14,7 +14,8 @@ socket.on('index', (index) => {
 const getText = (item, index) => {
 	const textContent = item.textContent;
 	//Emit the quote to the server
-	socket.emit('quote', textContent, index + 17);
+	const patrickIndex = index + 17;
+	socket.emit('quote', textContent, patrickIndex);
 };
 
 const list = document.querySelector('ul');
