@@ -15,6 +15,7 @@ const getText = (item, index) => {
 	const textContent = item.textContent;
 	//Emit the quote to the server
 	const patrickIndex = index + 17;
+	console.log(patrickIndex);
 	socket.emit('quote', textContent, patrickIndex);
 };
 
