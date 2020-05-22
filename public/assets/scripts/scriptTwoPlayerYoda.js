@@ -32,10 +32,3 @@ function printToScreen(quote) {
 	const printScreen = document.getElementById('printScreen');
 	printScreen.innerHTML = quote;
 }
-
-// let quotes = document.querySelectorAll('li');
-// quotes.forEach((item) =>
-// 	item.addEventListener('click', function() {
-// 		getText(item);
-// 	})
-// );
