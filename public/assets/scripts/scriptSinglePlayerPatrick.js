@@ -1,11 +1,11 @@
-// import audioArray from '../sounds/audioArray.js';
+import audioArray from '../sounds/audioArray.js';
 
 const list = document.querySelector('ul');
 const length = list.children.length;
 for (let i = 0; i < length; i++) {
 	(function(index) {
 		list.children[i].onclick = function() {
-			audioArray[i].play();
+			audioArray[i + 17].play();
 		};
 	})(i);
 }
